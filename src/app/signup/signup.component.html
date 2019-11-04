@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+
+<form (submit)="signup($event)">
+  
+
+  <div class="container">
+      <h2>SignUp Form</h2>
+      <p><b>First Name</b></p>
+      <input type="text" placeholder="Enter First name" required>
+      <p><b>Last Name</b></p>
+      <input type="text" placeholder="Enter Last name" required>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+        
+    <button type="submit">Sign Up</button>
+   
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button (click)="login()" type="button" class="cancelbtn">Log In</button>
+  </div>
+
+</form>
+
+</body>
+</html>
